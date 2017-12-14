@@ -6,8 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-import cn.jzvd.JZVideoPlayer;
-
 /**
  * @Company 北京同道伟业体育科技有限公司
  * @date 创建时间:2017/10/16
@@ -28,10 +26,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button btnTwo = (Button) findViewById(R.id.btn_two);
         Button btnThree = (Button) findViewById(R.id.btn_three);
         Button btnFour = (Button) findViewById(R.id.btn_four);
+        Button btnFive = (Button) findViewById(R.id.btn_five);
         btnOne.setOnClickListener(this);
         btnTwo.setOnClickListener(this);
         btnThree.setOnClickListener(this);
         btnFour.setOnClickListener(this);
+        btnFive.setOnClickListener(this);
     }
 
     @Override
@@ -50,10 +50,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_four:
                 startActivity(new Intent(this, FourActivity.class));
                 break;
+            case R.id.btn_five:
+                startActivity(new Intent(this, FiveActivity.class));
+                break;
         }
     }
 
-    @Override
+  /*  @Override
     public void onBackPressed() {
         if (JZVideoPlayer.backPress()) {
             return;
@@ -64,5 +67,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onPause() {
         super.onPause();
         JZVideoPlayer.releaseAllVideos();
-    }
+    }*/
 }

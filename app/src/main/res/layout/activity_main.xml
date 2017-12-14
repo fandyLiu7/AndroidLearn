@@ -34,6 +34,10 @@
         android:layout_height="wrap_content"
         android:text="联动效果as自带"/>
 
-
+    <Button
+        android:id="@+id/btn_five"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="张金波个傻逼"/>
 
 </LinearLayout>
